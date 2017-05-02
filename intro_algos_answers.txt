@@ -1,0 +1,33 @@
+1. Calculating tips
+READ final bill amount
+OBTAIN percentage of tip that you want to pay
+Divide the percentage of tip to 100
+Multiply final bill amount to result of previous statement
+
+2. Determining what to wear
+READ a closet.
+GET any of the underwear available and wear
+GET any of the pants available and wear
+GET any of the shirts available and wear
+IF temperature outside is less than 35 degrees F, then
+  wear jacket and padding
+ELSE IF temperature outside is less than 60 degrees F, then
+  wear jacket
+ENDIF
+
+3. Getting to work
+Wake up at 630 AM
+Drink a cup of coffee
+IF shower not done then
+  take shower
+ENDIF
+GET shirt, pant, and underwear and wear
+IF temperature outside is less than 35 degrees F, then
+  wear jacket and padding
+ELSE IF temperature outside is less than 60 degrees F, then
+  wear jacket
+ENDIF
+SET laptop to backpack
+OBTAIN backpack
+GET to car
+Drive to work
