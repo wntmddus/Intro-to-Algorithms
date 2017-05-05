@@ -1,0 +1,19 @@
+1. Given that length of collection size is 26(alphabet counts) and G is located at 7th slot in array
+So it would take 7 iteration for linear search algorithm to find the location of G
+2. On first iteration it will visit 13th slot then 6th slot on next then 9th then 7th
+so it will take binary search to find the slot in 4 iterations
+3. fib(10) 34+55=89
+fib(11) 55+89=144
+fib(12) 89+144=233
+
+In the benchmark, it shows that iterative fibonacci is a lot faster than recursive Fibonacci
+
+user     system      total        real
+recursive fibonacci   0.000000   0.000000   0.000000 (  0.001688)
+iterative fibonacci   0.000000   0.000000   0.000000 (  0.000013)
+
+1. In the given list of 1 million unsorted items in array, I believe linear search is a lot efficient to
+approach to problem, and search method must be designed iteratively
+
+2. In the given list of 1 million sorted items in array, binary search is a lot efficient to approach,
+and search should be designed iteratively to efficiently go through.
