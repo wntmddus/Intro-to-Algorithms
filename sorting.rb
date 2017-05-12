@@ -53,6 +53,7 @@ class MinHeapSort
   def heapify(last_index)
     arr = self.heap
     self.heap = [nil]
+
     for i in 1..arr.length - 1
       insert(arr[i])
     end
@@ -95,6 +96,55 @@ class MinHeapSort
     end
   end
 end
+
+def heap_sort(arr)
+  heapify(arr)
+  the_end = arr.length - 1
+
+  while the_end > 0
+    arr[the_end], arr[0] = arr[0], arr[the_end]
+    the_end -= 1
+    sift_down(arr, 0, the_end)
+  end
+
+  arr
+end
+
+def heapify(arr)
+  the_start = (arr.length - 2) / 2
+
+  while the_start >= 0
+    sift_down(arr, the_start, arr.length - 1)
+    the_start -= 1
+  end
+
+  arr
+end
+
+def sift_down(arr, the_start, the_end)
+  root = the_start
+
+  while root * 2 + 1 <= the_end
+    child = root * 2 + 1
+    swap = root
+
+    if arr[swap] < arr[child]
+      swap = child
+    end
+
+    if child + 1 <= the_end && arr[swap] < arr[child + 1]
+      swap = child + 1
+    end
+
+    if swap != root
+      arr[root], arr[swap] = arr[swap], arr[root]
+      root = swap
+    else
+      return
+    end
+  end
+end
+
 def bucketsort(arr)
   buckets = Array.new((arr.max + 1), 0)
 

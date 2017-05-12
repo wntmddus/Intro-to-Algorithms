@@ -12,7 +12,7 @@ p h.heap
 
 Benchmark.bm(7) do |x|
   x.report("quicksort 50 items: ") { quicksort(a, 0, 49)}
-  x.report("heapsort 50 items: ") { h.sort_array }
+  x.report("heapsort 50 items: ") { heap_sort(a) }
   x.report("bucketsort 50 items: ") { bucketsort(a) }
   x.report("insertion sort 50 items: ") { insertion_sort(a) }
   x.report("selection sort 50 items: ") { selection_sort(a) }
