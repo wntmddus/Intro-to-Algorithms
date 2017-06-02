@@ -1,0 +1,33 @@
+Describe an analogy for relating an algorithm that has efficiency O(1) and another algorithm that has O(2n). An example would be:
+- Algorithm that has O(1) is speed of 5G network and O(n^2) is a speed of 2G network
+
+In plain English, what is the worst-case scenario for binary search?
+- It searches through all the possible indexes that are within the given boundary
+In plain English, what is the bounded-case scenario for binary search?
+- It searches through half of the possible indexes that are within the given boundary.
+At the maximum, algorithm supposed to search 15 iterations for its worst cases, but in bounded cases, it would
+search around 7 to 8 iterations.
+Create a graph using the data below. Here's a CSV with the values you'll need.
+Link to graph: https://docs.google.com/spreadsheets/d/1m0ucEE4d3NbsMXAprWmMwwVZAVuTDO157NO0x9Z123o/edit?usp=sharing
+
+What's the asymptotic limit as n approaches infinity for the function defined by the values above?
+- As x approaches to infinity y also approaches to infinity. x values increases linearly and y values increases exponentially
+What is the Big-O of an algorithm that has the data points above?
+- O(2^n)
+Write a Ruby script that calculates and prints the N number, given an iteration, for linear search in the worst case (similar to the graph above).
+def linear_search(arr, find)
+  for i in (0..arr.length-1)
+    # if find element is found at the very last index, it will print arr.length as a number of iteration it has done
+    if arr[i] == find
+      p i+1
+      break
+    end
+  end
+Create a graph from the output using Google Sheets or other graphing software. Analyze the graph and denote its Big-O somewhere on the graph.
+
+What is the Big-O of binary search?
+- O(log n)
+What is the Big-Ω of binary search?
+- Ω(1)
+What is the Big-Ө of binary search?
+- Ө(log n)
