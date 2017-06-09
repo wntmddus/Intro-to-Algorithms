@@ -1,0 +1,18 @@
+1. O(1) time
+This function will be running in a O(1) time since number of operations executed from this function
+is constant and will not change its speed regardless.
+2. O(n) time
+This function goes through all the elements in array to find the largest value from the list.
+Since number of iterations occurred from this function never changes, it will be executed in O(n) linear time
+3. O(n^2) times
+This function generates loop inside of loop in a fixed amount of time, which means it will always be executing
+same amount of iterations regardless of input. Therefore running time of this algorithm is O(n^2)
+4. O(2^n) times
+This function generates two loop in parallel recursively on numbers(n-1) + numbers(n-2)
+And each numbers in recursive calls will nest two other recursive calls if necessary which makes it 2^n
+5. O(n) times
+This function only associates one loop that has operates fixed number of iterations, which results n times
+6. O(n log n) times
+This sorting algorithm first performs partition where it divides numbers less than pivot value and larger than pivot value.
+And this operation takes n times. After partition, it calls out recursive method to perform partitions in smaller set of divisions.
+and that is log n times. so it eventually takes n log n times for whole sorting method.
