@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def poorly_written_ruby(*arrays)
   combined_array = []
   (0..arrays.length-1).each do |i|
@@ -26,3 +27,6 @@ def poorly_written_ruby(*arrays)
   # Return the sorted array
   sorted_array
 end
+=======
+
+>>>>>>> 1779c7001d42e60293990037e1258c1221c38c2a
